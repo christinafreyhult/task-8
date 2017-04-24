@@ -32,16 +32,17 @@
             <form class = "survey">
                 <fieldset>
                     <legend>Your favorites</legend>
-                      <p>Who is your favorite band member:</p>
+                      <label>Who is your favorite band member:</label><br>
                       <input type="radio" name="res" value="John" id="john"> 
                       <label for="john">John</label>
                       <input type="radio" name="res" value="Hazzard" id="hazzard"> <label for="hazzard">Hazzard</label>
                       <input type="radio" name="res" value="Bob" id="bob"> 
                       <label for="bob">Bob</label>
                       <input type="radio" name="res" value="Sally" id="sally">
-                      <label for="sally">Sally</label>
-
-                      <p>What is your favorite album:</p>
+                      <label for="sally">Sally</label><br>
+                        
+                      <br>
+                      <label for="albums">What is your favorite album:</label>
                       <select id="albums" name="select">
                         <option value="1">A Day Of Old</option>
                         <option value="2">Diamond Fireworks</option>
@@ -54,10 +55,11 @@
                         <option value="9">Song For Yesterday</option>
                         <option value="10">Street Of The Rider</option>
                         <option value="11">This Is For You</option>
-                      </select>
+                      </select><br>
 
-                      <p>What is your favorite song:</p>
-                      <textarea></textarea>
+                      <br>
+                      <label for="fav">What is your favorite song:</label>
+                      <textarea id="fav"></textarea>
                 </fieldset>
             </form>
           </div>
@@ -71,9 +73,9 @@
               <form class="newsletter">
                   <fieldset>
                       <legend>Your contact info</legend>
-                        <p>Name: <input type ="text" name="textfield"></p>
-                        <p>Email: <input type ="email" name="textfield"></p>
-                        <p>Retype Email: <input type ="email" name="textfield"></p>
+                        <label for="contact_name">Name: <input id="contact_name" type ="text" name="textfield"></label><br>
+                        <label for="contact_email">Email: <input id="contact_email" type ="email" name="textfield"></label><br>
+                        <label for="contact_retype">Retype Email: <input id="contact_retype" type ="email" name="textfield"></label><br><br>
                         <button type="submit" aria-describedby="descriptionSignUp">Sign Up</button>
                    </fieldset>
                 </form>
